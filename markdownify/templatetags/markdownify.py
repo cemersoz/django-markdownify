@@ -4,7 +4,7 @@ from django import template
 from django.conf import settings
 from django.utils.safestring import mark_safe
 
-import markdown
+import markdown2 as markdown
 import bleach
 
 
