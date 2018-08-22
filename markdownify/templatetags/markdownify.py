@@ -43,7 +43,7 @@ def markdownify(text):
                 )]
 
     # Convert markdown to html
-    html = markdown.markdown(text, extensions=extensions)
+    html = markdown.markdown(text, extras=extensions)
 
     # Sanitize html if wanted
     if getattr(settings, 'MARKDOWNIFY_BLEACH', True):
